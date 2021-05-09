@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extentReport>
+    <configuration>
+        <theme>standard</theme>
+        <reportName>TSR.html</reportName>
+        <reportTitle>TSR</reportTitle>
+        <dateFormat>dd/mm/yyyy</dateFormat>
+        <timeFormat>hh:mm:ss</timeFormat>
+    </configuration>
+</extentReport>
