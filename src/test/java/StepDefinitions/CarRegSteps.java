@@ -49,6 +49,7 @@ public class CarRegSteps extends CommonUtils {
                 {
                     driver.findElement(By.xpath("//*[@id=\"m\"]/div[2]/div[12]/div/div/dl/div/dd[2]/a")).click();
                     System.out.println("Specifications did not match for:- "+ carRegNum);
+                    System.out.println("\n");
                 //
                     driver.findElement(By.id("vrm-input")).clear();
                     driver.navigate().back();
@@ -73,10 +74,43 @@ public class CarRegSteps extends CommonUtils {
                             if(registration.equals(details[0]))
                             {
                                 Assert.assertEquals(make,details[1]);
+                                if (make.equals(details[1]))
+                                {
+                                    System.out.println("Make matched for:- "+ carRegNum);
+                                }
+                                else
+                                {
+                                    System.out.println("Make does not match for:- "+ carRegNum);
+                                }
                                 Assert.assertEquals(model,details[2]);
+                                if (model.equals(details[2]))
+                                {
+                                    System.out.println("Model matched for:- "+ carRegNum);
+                                }
+                                else
+                                {
+                                    System.out.println("Model does not match for:- "+ carRegNum);
+                                }
                                 Assert.assertEquals(color,details[3]);
+                                if (color.equals(details[3]))
+                                {
+                                    System.out.println("Color matched for:- "+ carRegNum);
+                                }
+                                else
+                                {
+                                    System.out.println("Color does not match for:- "+ carRegNum);
+                                }
                                 Assert.assertEquals(year,details[4]);
-                                System.out.println("Specifications matched for:- "+ carRegNum);
+                                if (year.equals(details[4]))
+                                {
+                                    System.out.println("Year matched for:- "+ carRegNum);
+                                }
+                                else
+                                {
+                                    System.out.println("Year does not match for:- "+ carRegNum);
+                                }
+                                System.out.println("All Specifications matched for:- "+ carRegNum);
+                                System.out.println("\n");
                             }
                         }
                     }
